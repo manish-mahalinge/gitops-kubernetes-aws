@@ -26,9 +26,11 @@ Monitoring Layer → Prometheus → Grafana
 
 ---
 
-## Proof of Work
 
-### Kubernetes Dashboard
+
+### Kubernetes Monitoring Dashboard
+<img width="1920" height="1080" alt="Screenshot (86)" src="https://github.com/user-attachments/assets/4dd96273-ccb6-4f4f-be9e-5a26a5417176" />
+
 ![Kubernetes Dashboard](k8s-dashboard.png)
 
 ### Argo CD Application Dashboard
