@@ -26,16 +26,16 @@ Monitoring Layer → Prometheus → Grafana
 
 ---
 
-## Screenshots
+## Proof of Work
 
 ### Kubernetes Dashboard
-![Kubernetes Dashboard](screenshots/k8s-dashboard.png)
+![Kubernetes Dashboard](k8s-dashboard.png)
 
 ### Argo CD Application Dashboard
-![Argo CD Dashboard](screenshots/argocd-dashboard.png)
+![Argo CD Dashboard](argocd-dashboard.png)
 
 ### kubectl get all Output
-![Kubectl Output](screenshots/kubectl-get-all.png)
+![Kubectl Output](kubectl-get-all.png)
 
 ---
 
@@ -44,6 +44,8 @@ Monitoring Layer → Prometheus → Grafana
 ### ImagePullBackOff Error
 - Cause: Worker nodes did not have permission to pull images from private ECR.
 - Solution: Added IAM policy AmazonEC2ContainerRegistryReadOnly to node role.
+
+---
 
 ### OOMKilled Pods in Prometheus
 - Cause: High memory usage due to default resource configuration.
