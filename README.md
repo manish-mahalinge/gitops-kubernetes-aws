@@ -1,7 +1,7 @@
 # GitOps-Based CI/CD Pipeline using Argo CD on AWS EKS
 
 ## Overview
-Engineered a declarative CI/CD pipeline using Argo CD and GitOps principles to manage containerized applications on AWS EKS. This project ensures high availability and system reliability through automated synchronization between Git and Kubernetes cluster.
+Engineered a declarative CI/CD pipeline using Argo CD and GitOps principles to manage containerized applications on AWS EKS. The system ensures high availability, scalability, and automated synchronization between Git repository and Kubernetes cluster.
 
 ---
 
@@ -14,48 +14,49 @@ Engineered a declarative CI/CD pipeline using Argo CD and GitOps principles to m
 ---
 
 ## Key Achievements
-- 99.9% Availability achieved through Kubernetes self-healing, health checks, and workload orchestration.
-- Real-time monitoring implemented using Grafana dashboards for CPU, memory, and cluster health visibility.
-- Automated deployment workflow using GitOps (Git → Argo CD → Kubernetes).
+- 99.9% availability achieved using Kubernetes self-healing and health checks
+- Real-time monitoring using Grafana dashboards for cluster performance
+- Fully automated GitOps deployment workflow (Git → Argo CD → Kubernetes)
+- Stable multi-service microservices deployment on Kubernetes
 
 ---
 
 ## Architecture Flow
 Git Repository → Argo CD → AWS EKS Cluster → Application Deployment  
-Monitoring Layer → Prometheus → Grafana
+Monitoring → Prometheus → Grafana
 
 ---
 
-
+## Screenshots
 
 ### Kubernetes Monitoring Dashboard
-<img width="1920" height="1080" alt="Screenshot (86)" src="https://github.com/user-attachments/assets/4dd96273-ccb6-4f4f-be9e-5a26a5417176" />
+![Kubernetes Dashboard](sandbox:/mnt/data/Screenshot%20(86).png)
 
-![Kubernetes Dashboard](k8s-dashboard.png)
+### kubectl Cluster State
+![kubectl output](sandbox:/mnt/data/Screenshot%20(89).png)
 
-### Argo CD Application Dashboard
-![Argo CD Dashboard](argocd-dashboard.png)
-
-### kubectl get all Output
-![Kubectl Output](kubectl-get-all.png)
+### Argo CD Application Sync
+![Argo CD Dashboard](sandbox:/mnt/data/Screenshot%20(83).png)
 
 ---
 
 ## Challenges & Troubleshooting
 
-### ImagePullBackOff Error
-- Cause: Worker nodes did not have permission to pull images from private ECR.
-- Solution: Added IAM policy AmazonEC2ContainerRegistryReadOnly to node role.
+### ImagePullBackOff
+- Cause: Missing IAM permissions for ECR access in worker nodes
+- Fix: Attached AmazonEC2ContainerRegistryReadOnly policy to EKS node role
 
 ---
 
-### OOMKilled Pods in Prometheus
-- Cause: High memory usage due to default resource configuration.
-- Solution: Implemented resource requests/limits and optimized retention settings.
+### OOMKilled in Prometheus
+- Cause: High memory consumption due to default configuration
+- Fix:
+  - Added resource requests and limits
+  - Optimized Prometheus retention settings
 
 ---
 
 ## Result
-- Fully automated CI/CD pipeline using GitOps
-- Stable Kubernetes deployment on AWS EKS
-- Improved reliability, scalability, and deployment consistency
+- Fully automated GitOps-based CI/CD pipeline
+- Stable and scalable Kubernetes deployment on AWS EKS
+- Improved observability, reliability, and deployment efficiency
