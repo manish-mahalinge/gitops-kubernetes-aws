@@ -42,6 +42,11 @@ Monitoring → Prometheus → Grafana
 <img width="1920" height="1080" alt="Screenshot (80)" src="https://github.com/user-attachments/assets/dbfeb597-3753-477f-8d00-c8dc3bb4ae97" />
 
 
+###Grafana Dashboard
+![dashboard](https://github.com/user-attachments/assets/c8b449b2-e189-4e5c-98d7-d437ed00859c)
+
+
+
 ---
 
 ## Challenges & Troubleshooting
