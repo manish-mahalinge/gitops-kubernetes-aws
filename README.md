@@ -24,6 +24,8 @@ Engineered a declarative CI/CD pipeline using Argo CD and GitOps principles to m
 ## Architecture Flow
 Git Repository → Argo CD → AWS EKS Cluster → Application Deployment  
 Monitoring → Prometheus → Grafana
+<img width="1919" height="767" alt="Screenshot 2026-04-11 120835" src="https://github.com/user-attachments/assets/5eee0e77-6b74-41ed-8443-463723fb1c06" />
+
 
 ---
 
