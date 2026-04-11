@@ -27,16 +27,18 @@ Monitoring → Prometheus → Grafana
 
 ---
 
-## Screenshots
 
 ### Kubernetes Monitoring Dashboard
-![Kubernetes Dashboard](sandbox:/mnt/data/Screenshot%20(86).png)
+<img width="1920" height="1080" alt="Screenshot (88)" src="https://github.com/user-attachments/assets/d823ed83-6165-4b12-a806-41efac79b292" />
+
 
 ### kubectl Cluster State
-![kubectl output](sandbox:/mnt/data/Screenshot%20(89).png)
+<img width="1920" height="1080" alt="Screenshot (89)" src="https://github.com/user-attachments/assets/9b2386d5-7a3e-4066-a815-97d3d0de7941" />
+
 
 ### Argo CD Application Sync
-![Argo CD Dashboard](sandbox:/mnt/data/Screenshot%20(83).png)
+<img width="1920" height="1080" alt="Screenshot (80)" src="https://github.com/user-attachments/assets/dbfeb597-3753-477f-8d00-c8dc3bb4ae97" />
+
 
 ---
 
